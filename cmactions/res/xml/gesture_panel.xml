@@ -19,8 +19,25 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceCategory
+        android:key="ambient_display_key"
+        android:title="@string/ambient_display_title">
+
+        <SwitchPreference
+            android:key="gesture_pick_up"
+            android:defaultValue="true"
+            android:title="@string/pick_up_gesture_title"
+            android:summary="@string/pick_up_gesture_summary" />
+
+        <SwitchPreference
+            android:key="gesture_hand_wave"
+            android:defaultValue="true"
+            android:title="@string/hand_wave_gesture_title"
+            android:summary="@string/hand_wave_gesture_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="actions_key"
-        android:title="@string/actions_title" >
+        android:title="@string/actions_title">
 
         <SwitchPreference
             android:key="gesture_camera_action"
@@ -37,8 +54,8 @@
         <SwitchPreference
             android:key="gesture_ir_silencer"
             android:defaultValue="false"
-            android:title="@string/ir_silencer_title"
-            android:summary="@string/ir_silencer_summary" />
+            android:title="@string/hand_wave_silencer_title"
+            android:summary="@string/hand_wave_silencer_summary" />
 
         <SwitchPreference
             android:key="gesture_flip_to_mute"
