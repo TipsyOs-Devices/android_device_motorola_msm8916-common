@@ -106,11 +106,6 @@ vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxQcelp13Dec.so
 
-# Moto
-bin/batt_health
-bin/dbvc_atvc_property_set
-bin/hardware_revisions.sh
-
 # IMS
 -vendor/app/ims/ims.apk|4c6218b87fca78a8c21e42750d4b7694
 -vendor/app/imssettings/imssettings.apk|bd330550364c03083f42cb6930505749
